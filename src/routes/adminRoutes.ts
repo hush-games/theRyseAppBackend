@@ -3,7 +3,7 @@ import { createResource, createUser } from "../controllers/adminController";
 
 const router = express.Router();
 
-router.post("/create-user", createUser);
-router.post("/create-resource", createResource);
+router.post("/user", createUser);
+router.post("/resource", createResource);
 
 export default router;
