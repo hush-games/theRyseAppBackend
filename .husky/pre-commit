@@ -9,3 +9,5 @@ npm run lint-staged || {
   echo "ERROR: Linting issues were found in the committed files. Please address them before proceeding."
   exit 1
 }
+
+echo "🎉 Pre-commit hook passed: All linting and formatting are good!"
