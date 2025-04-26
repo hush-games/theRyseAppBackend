@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "type": "module",
   "description": "Backend API for the Ryse App",
-  "main": "index.js",
+  "main": "src/server.ts",
   "scripts": {
     "start": "ts-node src/server.ts",
     "build": "tsc",
-    "serve": "node dist/server.ts",
+    "serve": "node dist/server.js",
     "gen:types": "supabase gen types typescript --project-id lgynuyeuunpseosrgwuy > src/types/database.types.ts",
     "format": "npx prettier --write .",
     "lint": "npx eslint . --fix",
