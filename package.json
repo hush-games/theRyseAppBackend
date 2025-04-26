@@ -1,7 +1,6 @@
 {
   "name": "theryseappbackend",
   "version": "1.0.0",
-  "type": "module",
   "description": "Backend API for the Ryse App",
   "main": "src/server.ts",
   "scripts": {
