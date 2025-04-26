@@ -1,6 +1,7 @@
 {
   "name": "theryseappbackend",
   "version": "1.0.0",
+  "type": "module",
   "description": "Backend API for the Ryse App",
   "main": "index.js",
   "scripts": {
@@ -8,7 +9,8 @@
     "build": "tsc",
     "serve": "node dist/server.ts",
     "gen:types": "supabase gen types typescript --project-id lgynuyeuunpseosrgwuy > src/types/database.types.ts",
-    "prettier": "npx prettier --write .",
+    "format": "npx prettier --write .",
+    "lint": "npx eslint . --fix",
     "lint-staged": "lint-staged",
     "prepare": "husky"
   },
@@ -18,6 +20,10 @@
   "devDependencies": {
     "@types/express": "^5.0.1",
     "@types/node": "^22.14.1",
+    "@typescript-eslint/eslint-plugin": "^8.31.0",
+    "@typescript-eslint/parser": "^8.31.0",
+    "eslint-config-prettier": "^10.1.2",
+    "eslint-plugin-prettier": "^5.2.6",
     "express": "^5.1.0",
     "husky": "^9.1.7",
     "lint-staged": "^15.5.1",
