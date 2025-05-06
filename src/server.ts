@@ -9,7 +9,7 @@ const app = express();
 app.use(express.json());
 
 app.get("/", (req: Request, res: Response) => {
-  res.send("yippee");
+  res.json({ message: "Yipee!" });
 });
 
 app.use("/api/user", userRoutes);
