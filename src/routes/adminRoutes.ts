@@ -1,9 +1,17 @@
 import express from "express";
-import { createResource, createUser } from "../controllers/adminController";
 
-const router = express.Router();
+const adminRouter = express.Router();
 
-router.post("/user", createUser);
-router.post("/resource", createResource);
+adminRouter.get("/", (req, res) => {
+  res.json({ msg: "admin route" });
+});
 
-export default router;
+// -> to controllers
+// router.get("/users", getAllUsers) // with non-public info
+// router.get("/users/:id", getUser) // with non-public info
+// router.post("/user:id", updateUser)
+// router.post("/resource:id", updateResource)
+// router.delete("/user:id", updateUser)
+// router.delete("/resource:id", updateResource)
+
+export default adminRouter;

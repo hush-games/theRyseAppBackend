@@ -1,8 +1,15 @@
 import express from "express";
-import { getResources } from "../controllers/userController";
 
-const router = express.Router();
+const userRouter = express.Router();
 
-router.get("/resources", getResources);
+userRouter.get("/", (req, res) => {
+  res.json({ msg: "users route" });
+});
 
-export default router;
+// -> to controllers
+// router.get("/me",  getMe);
+// router.post("/me",  updateMe);
+// router.delete("/me",  deleteMe);
+// router.get("/:id", getUserById); // Public profile
+
+export default userRouter;

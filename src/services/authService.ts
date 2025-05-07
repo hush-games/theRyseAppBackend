@@ -1,6 +1,6 @@
 import { supabaseAdmin } from "../config/supabaseAdmin";
 
-export const createUserService = async (
+export const signUpUserService = async (
   email: string,
   password: string,
   role: string,

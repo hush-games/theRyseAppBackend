@@ -1,19 +1,12 @@
 import dotenv from "dotenv";
 dotenv.config();
-
-import express, { Request, Response } from "express";
-import userRoutes from "./routes/userRoutes";
-import adminRoutes from "./routes/adminRoutes";
+import express from "express";
+import router from "./routes";
 
 const app = express();
 app.use(express.json());
 
-app.get("/", (req: Request, res: Response) => {
-  res.json({ message: "Yipee!" });
-});
-
-app.use("/api/user", userRoutes);
-app.use("/api/admin", adminRoutes);
+app.use(router);
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
