@@ -8,8 +8,9 @@
     "build": "tsc",
     "serve": "node dist/server.js",
     "gen:types": "supabase gen types typescript --project-id lgynuyeuunpseosrgwuy > src/types/database.types.ts",
-    "format": "npx prettier --write .",
-    "lint": "npx eslint . --fix",
+    "check": "prettier --check .",
+    "format": "prettier --write .",
+    "lint": "eslint .",
     "lint-staged": "lint-staged",
     "prepare": "husky"
   },
