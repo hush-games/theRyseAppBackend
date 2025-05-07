@@ -1,3 +1,3 @@
-# theRyseAppBackend
+# theResourceHubBackend
 
-Backend API for the Ryse App
+Backend API for the Resource Hub

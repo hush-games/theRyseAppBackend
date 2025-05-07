@@ -1,7 +1,7 @@
 {
-  "name": "theryseappbackend",
+  "name": "resourcehubbackend",
   "version": "1.0.0",
-  "description": "Backend API for the Ryse App",
+  "description": "Backend API for the Resource Hub",
   "main": "src/server.ts",
   "scripts": {
     "start": "ts-node src/server.ts",
