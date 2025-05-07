@@ -1,14 +1,14 @@
 import { Request, Response } from "express";
-import { createUserService } from "../services/userService";
+import { signUpUserService } from "../services/authService";
 
-export const createUser = async (
+export const signUpUser = async (
   req: Request,
   res: Response,
 ): Promise<void> => {
   try {
     const { email, password, role } = req.body;
 
-    const user = await createUserService(email, password, role);
+    const user = await signUpUserService(email, password, role);
 
     res.status(201).json({ message: "User created with role", user });
   } catch (error) {
