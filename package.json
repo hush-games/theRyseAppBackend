@@ -4,7 +4,8 @@
   "description": "Backend API for the Resource Hub",
   "main": "src/server.ts",
   "scripts": {
-    "start": "ts-node src/server.ts",
+    "dev": "ts-node src/services/resourceService.ts",
+    "test-data": "ts-node testing/data.test.ts",
     "build": "tsc",
     "serve": "node dist/server.js",
     "gen:types": "supabase gen types typescript --project-id lgynuyeuunpseosrgwuy > src/types/database.types.ts",
